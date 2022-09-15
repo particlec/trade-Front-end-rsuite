@@ -34,6 +34,8 @@ const App = () => {
             <Route path="form-basic" element={<FormBasicPage />} />
             <Route path="form-wizard" element={<FormWizardPage />} />
             <Route path="calendar" element={<CalendarPage />} />
+            {/*stock-market*/}
+            <Route path="stock-market" element={<CalendarPage />} />
           </Route>
           <Route path="*" element={<Error404Page />} />
         </Routes>

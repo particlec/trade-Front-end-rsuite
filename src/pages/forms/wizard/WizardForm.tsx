@@ -13,6 +13,7 @@ import Completed from './Completed';
 
 const forms = [ProjectTypeForm, ProjectInfoForm, TeamSettingsForm, BusinessDetailForm, Completed];
 
+// 步骤条,后面选玩策略，可以跑程序
 const WizardForm = () => {
   const [step, setStep] = useState(0);
   const Form = forms[step];

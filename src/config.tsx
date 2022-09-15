@@ -3,8 +3,41 @@ import { Icon } from '@rsuite/icons';
 import { VscTable, VscCalendar } from 'react-icons/vsc';
 import { MdFingerprint, MdDashboard, MdModeEditOutline } from 'react-icons/md';
 import CubesIcon from '@rsuite/icons/legacy/Cubes';
+import ScatterIcon from '@rsuite/icons/Scatter';
+import TrendIcon from '@rsuite/icons/Trend';
+import ReloadIcon from '@rsuite/icons/Reload';
 
 export const appNavs = [
+  {
+    eventKey: 'risk-assessment',
+    icon:  <ScatterIcon />,
+    title: 'risk-assessment',
+    to: '/risk-assessment',
+    children: [
+      {
+        eventKey: 'stock-market',
+        title: 'stock-market',
+        to: '/stock-market'
+      },
+      {
+        eventKey: 'national-debt',
+        title: 'national-debt',
+        to: '/national-debt'
+      }
+    ]
+  },
+  {
+    eventKey: 'big-data-training',
+    icon:  <TrendIcon />,
+    title: 'training',
+    to: '/training'
+  },
+  {
+    eventKey: 'strategy-run',
+    icon:  <ReloadIcon />,
+    title: 'run-strategy',
+    to: '/run-strategy'
+  },
   {
     eventKey: 'dashboard',
     icon: <Icon as={MdDashboard} />,

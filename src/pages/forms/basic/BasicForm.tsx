@@ -128,11 +128,12 @@ const BasicForm = () => {
           <Form.Control name="datePicker" accepter={DatePicker} />
         </Form.Group>
 
+        {/*可能会用到时间范围*/}
         <Form.Group controlId="dateRangePicker">
           <Form.ControlLabel>DateRangePicker</Form.ControlLabel>
           <Form.Control name="dateRangePicker" accepter={DateRangePicker} />
         </Form.Group>
-
+         {/*可能用到*/}
         <Form.Group controlId="checkPicker">
           <Form.ControlLabel>CheckPicker</Form.ControlLabel>
           <Form.Control name="checkPicker" accepter={CheckPicker} data={selectData} />
@@ -143,6 +144,7 @@ const BasicForm = () => {
           <Form.Control name="selectPicker" accepter={SelectPicker} data={selectData} />
         </Form.Group>
 
+        {/*可能用到*/}
         <Form.Group controlId="tagPicker">
           <Form.ControlLabel>TagPicker</Form.ControlLabel>
           <Form.Control name="tagPicker" accepter={TagPicker} data={selectData} />

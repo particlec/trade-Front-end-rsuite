@@ -58,6 +58,8 @@ const Dashboard = () => {
 
       <Row gutter={30}>
         <Col xs={16}>
+
+          {/*折线图*/}
           <BarChart
             title="Traffic Summary"
             actions={
@@ -69,6 +71,7 @@ const Dashboard = () => {
             }
             data={barChartData}
             type="bar"
+            // 坐标
             labels={[
               '2022-01-20',
               '2022-01-21',
@@ -111,6 +114,7 @@ const Dashboard = () => {
           />
         </Col>
         <Col xs={8}>
+          {/*圆环 根据data数量自动算比例*/}
           <PieChart
             title="Traffic Sources"
             data={[112332, 123221, 432334, 342334, 133432]}
@@ -124,6 +128,7 @@ const Dashboard = () => {
           <DataTable />
         </Col>
         <Col xs={8}>
+          {/*圆饼 根据data数量自动算比例*/}
           <PieChart
             title="Browsers"
             data={[10000, 3000, 2000, 1000, 900]}
