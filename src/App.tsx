@@ -15,6 +15,7 @@ import VirtualizedTablePage from './pages/tables/virtualized';
 import FormBasicPage from './pages/forms/basic';
 import FormWizardPage from './pages/forms/wizard';
 import CalendarPage from './pages/calendar';
+import TrainingPage from './pages/training';
 import { appNavs } from './config';
 
 const App = () => {
@@ -36,6 +37,9 @@ const App = () => {
             <Route path="calendar" element={<CalendarPage />} />
             {/*stock-market*/}
             <Route path="stock-market" element={<CalendarPage />} />
+
+            <Route path="training" element={<TrainingPage />} />
+
           </Route>
           <Route path="*" element={<Error404Page />} />
         </Routes>

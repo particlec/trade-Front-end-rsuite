@@ -1,4 +1,4 @@
-import StockMarket from "@/pages/assessment/stockMarket/StockMarket";
+import Training from "@/pages/training/Training";
 import React from 'react';
 import {Breadcrumb, Panel} from 'rsuite';
 
@@ -10,13 +10,12 @@ const Page = () => {
                     <h3 className="title">Calendar</h3>
                     <Breadcrumb>
                         <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                        <Breadcrumb.Item>assessment</Breadcrumb.Item>
-                        <Breadcrumb.Item active>stockMarket</Breadcrumb.Item>
+                        <Breadcrumb.Item>training</Breadcrumb.Item>
                     </Breadcrumb>
                 </>
             }
         >
-            <StockMarket/>
+            <Training/>
         </Panel>
     );
 };

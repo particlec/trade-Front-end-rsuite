@@ -1,3 +1,4 @@
+import NationalDebt from "@/pages/assessment/nationalDebt/NationalDebt";
 import React from 'react';
 import { Panel, Breadcrumb } from 'rsuite';
 
@@ -15,6 +16,7 @@ const Page = () => {
                 </>
             }
         >
+            <NationalDebt/>
         </Panel>
     );
 };
