@@ -4,7 +4,7 @@ Ease developers’ life with the React Suite 5. TypeScript will help with optimi
 
 ![preview](./preview-1.png)
 
-![preview](./preview-2.png)
+
 
 ## Development
 

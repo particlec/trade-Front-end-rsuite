@@ -17,6 +17,7 @@ import FormWizardPage from './pages/forms/wizard';
 import CalendarPage from './pages/calendar';
 import TrainingPage from './pages/training';
 import { appNavs } from './config';
+import NationalPage from './pages/assessment/nationalDebt/index';
 
 const App = () => {
   return (
@@ -38,8 +39,9 @@ const App = () => {
             {/*stock-market*/}
             <Route path="stock-market" element={<CalendarPage />} />
 
-            <Route path="training" element={<TrainingPage />} />
+            <Route path="national-debt" element={<NationalPage />} />
 
+            <Route path="training" element={<TrainingPage />} />
           </Route>
           <Route path="*" element={<Error404Page />} />
         </Routes>
